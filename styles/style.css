@@ -1,1 +1,325 @@
-/* место для вашего кода */
+li {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+body {
+  height: 3028px;
+  background-color: #ffffff;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 0px 50px 0px 50px;
+  width: 1100px;
+  height: 293px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  min-width: 148px;
+  min-height: 105px;
+}
+
+.logo img {
+  height: 105px;
+}
+
+.address {
+  font-style: normal;
+  justify-self: end;
+  max-width: 236px;
+}
+
+.address ul {
+  line-height: 24.3px;
+  list-style-type: none;
+}
+
+.address a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.menu ul {
+  letter-spacing: 0;
+  line-height: 24.3px;
+  list-style-position: inside;
+  display: flex;
+  list-style-type: circle;
+  gap: 13px;
+}
+.menu ul li {
+  font-size: 18px;
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+.menu ul li:first-child {
+  list-style-type: none;
+  text-decoration: none;
+}
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0/0.6);
+  z-index: 1;
+  position: absolute;
+}
+.cover {
+  background-size: cover;
+  padding: 165px 50px 50px 50px;
+  background-image: url("/images/cover.jpg");
+  position: relative;
+  width: 1100px;
+  height: 757px;
+}
+.cover-words {
+  height: 385px;
+  display: flex;
+  letter-spacing: 30px;
+  flex-direction: column;
+}
+h1 span {
+  margin-bottom: 20px;
+}
+.first-word {
+  height: 115px;
+}
+.second-word {
+  height: 115px;
+  align-self: center;
+  margin-right: -30px;
+}
+.third-word {
+  height: 115px;
+  align-self: flex-end;
+  margin-right: -30px;
+}
+
+.description {
+  height: 51px;
+  display: flex;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  margin-top: 106px;
+}
+
+.description-second-wordspace {
+  word-spacing: 18px;
+}
+.description p {
+  align-self: center;
+  word-spacing: 22px;
+  color: #ffffff;
+}
+.description button {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 12px 32px 11px 31px;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+.container {
+  z-index: 2;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.cover .cover-words {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 100px;
+}
+.lots {
+  height: 723px;
+  background-color: rgb(255, 255, 255);
+  margin: 180px 0px 0px 0px;
+  padding: 0px 24px 0px 24px;
+}
+
+.lots-head {
+  font-size: 40px;
+  color: black;
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lots ul li {
+  display: block;
+  list-style-type: none;
+  width: 334px;
+  min-height: 596px;
+}
+.lots ul li a,
+.lots ul li article {
+  text-decoration: none;
+  height: 100%;
+}
+.lots ul li article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lots-1-lot,
+.lots-2-lot,
+.lots-3-lot {
+  padding: 48px 40px 48px 40px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.lots-1-title,
+.lots-2-title,
+.lots-3-title {
+  position: relative;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  z-index: 2;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+.lots-1-text,
+.lots-2-text,
+.lots-3-text {
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  color: white;
+  justify-self: flex-end;
+}
+.lots ul {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+}
+
+.lots-1-lot {
+  background-image: url(/images/card-lot-01.jpg);
+}
+.lots-2-lot {
+  background-image: url(/images/card-lot-02.jpg);
+}
+.lots-3-lot {
+  background-image: url(/images/card-lot-03.jpg);
+}
+
+.lots-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  margin: 30px 0px 0px 40px;
+}
+
+.about {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 334px 1fr;
+  margin: 120px 24px 0px 24px;
+  height: 595px;
+}
+
+.about-image {
+  height: 114px;
+  width: 148px;
+  background-size: cover;
+  background-image: url(/images/logo-white.svg);
+}
+
+.about-image-background {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0px 0px 0px;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.about-text h2 {
+  text-transform: uppercase;
+  margin-top: 136px;
+  margin-bottom: 100px;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+.about-text div p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about-paragraph {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer {
+  margin-top: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 180px;
+}
+
+.footer-address .address {
+  max-width: 264.57px;
+  margin-left: 50px;
+  justify-self: start;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu ul {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footer-menu-second-word,
+.footer-menu-third-word {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer-list {
+  margin-right: 50px;
+  justify-self: end;
+}
+.footer-list-socials {
+  gap: 48px;
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-list-socials li {
+  width: 48px;
+  height: 48px;
+}
