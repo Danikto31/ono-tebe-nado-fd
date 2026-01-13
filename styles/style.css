@@ -123,6 +123,7 @@ h1 span {
   word-spacing: 22px;
   color: #ffffff;
 }
+
 .description button {
   background-color: transparent;
   color: #ffffff;
@@ -155,12 +156,6 @@ h1 span {
   text-transform: uppercase;
 }
 
-.lot {
-  display: block;
-  list-style-type: none;
-  width: 334px;
-}
-
 .lot article {
   min-height: 500px;
   text-decoration: none;
@@ -170,7 +165,10 @@ h1 span {
   justify-content: space-between;
 }
 
-.lot {
+.lot {  
+  display: block;
+  list-style-type: none;
+  width: 334px;
   padding: 48px 40px 48px 40px;
   position: relative;
   background-size: cover;
@@ -274,12 +272,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-/* .footer-address .address {
-  max-width: 264.57px;
-  margin-left: 50px;
-  justify-self: start;
-} */
 
 .footer-menu {
   font-size: 18px;
